@@ -1,12 +1,14 @@
-- name: nginx and running Nginx
+# Platbook is nothing but list of plays
+
+- name: nginx and running Nginx     # here - means list of plays
   hosts: web
   become: yes  # will get root access
   tasks:
-  - name: Installing nginx
+  - name: Installing nginx            # here - means list of tasks
     ansible.builtin.package:
       name: nginx
       state: present
-  - name: nginx
+  - name: nginx                       # here - means list of tasks          
     ansible.builtin.service:
       name: nginx
       state: started
