@@ -4,6 +4,3 @@
   - name: check variables
     ansible.builtin.debug:
       msg: "Hi, I am learning {{DevOps}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
-
-
-
