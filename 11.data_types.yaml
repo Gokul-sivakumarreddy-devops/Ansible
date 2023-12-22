@@ -12,5 +12,14 @@
       AWS: 6
       Docker: 4
     Trainer: true  #boolean type
-
+  tasks:
+  - name: print key value pair
+    ansible.builtin.debug:
+      msg: "name: {{NAME}}"
+  - name: print  map
+    ansible.builtin.debug:
+      msg: "Experience: {{EXPERIENCE}}"    
+  - name: print  boolean
+    ansible.builtin.debug:
+      msg: "Is he a trainer: {{TRAINER}}"
 
