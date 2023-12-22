@@ -2,13 +2,13 @@
   hosts: localhost
   vars_files:
   - variables.yaml
-  vars_prompt:
-  - name: PERSON
-    prompt: Please enter your username
-    private: false # User can see what they are entering
-  - name: WISHES
-    prompt: Please enter your wishes
-    private: false # User cannot see what they are entering
+  #vars_prompt:
+  #- name: PERSON
+  # prompt: Please enter your username
+  #private: false # User can see what they are entering
+  #- name: WISHES
+  # prompt: Please enter your wishes
+  #private: false # User cannot see what they are entering
   vars:
     PERSON: "GOKUL from PLAY"
     WISHES: "Morning from PLAY"
@@ -31,7 +31,8 @@
 #ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 10.vars_preference.yaml
 #3. File  # After commenting vars
 
-#4. prompt
+#4. prompt # After commenting file from variables
+# 
 #5. play
 #6. inventory
 #7. roles
