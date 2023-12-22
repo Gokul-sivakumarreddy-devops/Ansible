@@ -1,0 +1,16 @@
+- name: checking data type
+  hosts: localhost
+  vars:
+    NAME: SivaKumar # Key value
+    Skills:    # Skills is a list type
+    - DevOps
+    - Shell
+    - ansible-playbook
+    - Linux
+    Experience: # Experience is map type. It contains key value p
+      DevOps: 7
+      AWS: 6
+      Docker: 4
+    Trainer: true  #boolean type
+
+
