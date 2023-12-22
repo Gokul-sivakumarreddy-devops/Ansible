@@ -18,8 +18,8 @@
       msg: "name: {{ NAME }}"
   - name: print  map
     ansible.builtin.debug:
-      msg: "Experience: {{ EXPERIENCE }}"    
+      msg: "Experience: {{ Experience }}"    
   - name: print  boolean
     ansible.builtin.debug:
-      msg: "Is he a trainer: {{ TRAINER }}"
+      msg: "Is he a trainer: {{ Trainer }}"
 
