@@ -1,4 +1,4 @@
-name: conditions
+- name: conditions
   hosts: localhost
   tasks:
   - name: check 
