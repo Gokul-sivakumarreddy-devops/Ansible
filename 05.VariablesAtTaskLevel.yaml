@@ -9,6 +9,8 @@
     vars:                   # At task Level
       Course: "DevOps with AWS"                          
     ansible.builtin.debug:
-      msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}" # Two double flowers for ansible variables
+      msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}" 
+      
+# Two double flowers for ansible variables
 
 # Task level variables can overwrite play level variables known as Inheritance
