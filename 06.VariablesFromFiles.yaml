@@ -1,0 +1,12 @@
+- name: variables from play level
+  hosts: localhost
+  vars:
+  - variables.yaml
+  tasks:
+  - name: check variables
+    ansible.builtin.debug:
+      msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}" 
+      
+# Two double flowers for ansible variables
+
+# Task level variables can overwrite play level variables known as Inheritance
